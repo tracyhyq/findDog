@@ -14,7 +14,6 @@
  * 11、增加打开扫描二维码
  * 12、支持WeixinApi的错误监控
  *
- * @author zhaoxianlie(http://www.baidufe.com)
  */
 var WeixinApi = (function () {
 
