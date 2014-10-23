@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name='HandheldFriendly'  content='True'/>
+	<meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no"/>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/WeixinApi.js"></script>
+	<title>寻找偷狗贼</title>
+</head>
+<body>
+	<section id="entry-page" class="current-section">
+		<p class="logo"></p>
+		<p class="little">全民寻找偷狗贼，拯救流浪狗大行动</p>
+		<p><span class="warn-icon"></span><span class="color-yellow">紧急！！</span>已经有<span class="num"></span>只狗狗被偷走了！</p>
+		<img src="images/pic_dogs.png" />
+		<a href="javascript:;" class="btn" id="start-game">开始游戏</a>
+	</section>
+	<section id="ready-page">
+		<div class="time-bar">
+			<span>过关：1/3</span>
+			<span class="time"><span class="time-icon"></span>计时：<span class="time-value">0</span>S</span>
+		</div>
+		<p class="tip">请记住偷狗<span class="thief-icon"></span>的相貌！</p>
+		<img src="images/pic_thief.png" />
+		<a href="javascript:;" class="btn" id="next">下一步</a>
+	</section>
+	<section id="game-page">
+		<section id="header">
+			<div class="time-bar">
+				<span>过关：<span class="gate-num">1</span>/3</span>
+				<span class="time"><span class="time-icon"></span>计时：<span class="time-value">0</span>S</span>
+			</div>
+			<p class="tip">从下面图片里，找出你刚看到的偷狗贼</p>
+			<p class="error-tip">
+				<span class="error-icon"></span>
+				冤枉！我是好人啊！我也痛恨偷狗贼！
+			</p>
+			<div class="imgs-wrap imgs3" col="3">
+				
+			</div>
+			<a href="javascript:;" col="3" class="btn back" id="back"></a>
+		</section>
+	</section>
+	<section id="share-page">
+		<p class="share-tip-up">太牛了！<span class="bold"><span class="cost">10</span>s</span>内找到了偷狗贼</p>
+		<p class="share-tip-down">救了<span class="num"></span>只流浪狗</p>
+		<div class="share-wrap">
+			<div class="share-wrap-bg"></div>
+			<a href="javascript:;" id="share-btn" class="btn">分享到朋友圈</a>
+			<p class="text">刚救下的流浪狗太可怜了，<span class="white">分享</span>帮他们找到家吧~</p>
+		</div>
+		<div class="get-wrap">
+			<div class="get-wrap-bg"></div>
+			<p class="txt">微信搜索公众号“<span class="change-color">毛小汪训练</span>”，关注并回复“<span class="change-color">wangwang</span>”，即有机会获得给狗狗的小礼物一份。</p>
+			<a href="http://mp.weixin.qq.com/s?__biz=MzA5NTE0MjIxMA==&mid=205455082&idx=1&sn=faa7acdc22dcc2580fde8e0608dbadee#rd" id="follow">立即领取</a>
+		</div>
+		<div class="shop-title">
+			<div class="shop-title-bg"></div>
+			<p class="bold">毛小汪帮流浪狗找家公益计划</p>
+		</div>
+		<div class="share-ft">
+			<p class="txt">对于流浪的毛小孩们，我们能做的不多，只希望给他们的世界带来一线希望！</p>
+			<div class="pic-wrap">
+				<img src="images/tongtong.png"/>
+				<span class="title">15期02号狗狗彤彤</span>
+				<a href="http://mp.weixin.qq.com/s?__biz=MzA5NTE0MjIxMA==&mid=204282278&idx=3&sn=21d45620b17ef05c615331e2c9465fbc#rd" id="btn-detail">查看详情</a>
+			</div>
+		</div>
+		<div class="share-pop">
+			<div class="share-pop-bg"></div>
+			<div class="share-icon">
+				<span>分享到朋友圈</span>
+			</div>
+		</div>
+	</section>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2af435bb2050226e888e17182029d77a' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>
